@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;  /* Prevents scrolling */
+    
 }
 
 header {
@@ -68,7 +68,7 @@ header {
     justify-content: center;
     position: relative;
     cursor: pointer;
-    overflow: hidden;
+  
     background-size: cover;
     background-position: center;
 }
