@@ -16,7 +16,7 @@ body {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: left;
     overflow: hidden;  /* Prevents scrolling */
 }
@@ -53,8 +53,8 @@ header {
 .grid {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     flex-wrap: wrap;
     margin-top: 30px;
 }
@@ -65,12 +65,12 @@ header {
     border-radius: 30px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: left;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .block span {
