@@ -1,69 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+        .profile-text {
+            flex-grow: 1;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .info {
+            color: gray;
+            font-size: 14px;
+        }
+        .description {
+            color: #666;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .check-out {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left;
+            width: 100%;
+            max-width: 400px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            gap: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .grid img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="image3.jpeg" alt="Your Name" class="profile-pic">
-            <h2>vishal</h2>
-            <p class="bio">A brief bio about yourself, your skills, and your interests.</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+    <div class="profile-container">
+        <img src="image3.jpeg" alt="Profile Picture" class="avatar">
+        <div class="profile-text">
+            <div class="name">Yogesh Gosavi (YoG)</div>
+            <div class="info">28-year-old guy 📍 Nashik, India</div>
+            <div class="description">👨‍💻 Creating Wallpapers, Customization Apps, Providing digital services & more...</div>
         </div>
-    </header>
+    </div><div class="check-out">Also Check Out !</div>
+<div class="grid">
+    <img src="image1.jpeg" alt="image1.jpeg">
+    <img src="image2.jpeg" alt="image2.jpeg">
+    <img src="image4.jpg" alt="image4.jpg">
+    <img src="image5.jpg" alt="image5.jpg">
+</div>
 
-
-<br>
-<br>
-<h3>My Gallery</h3>
-
-    <div class="grid">
-        <p
-        <div class="block" style="background-image: url('image2.jpeg');" onclick="openPopup('image2.jpeg')">
-            <div class="open-icon">↗</div>
-        </div>
-        <div class="block" style="background-image: url('image1.jpeg');" onclick="openPopup('image1.jpeg')">
-            <div class="open-icon">↗</div>
-        </p>
-
-            <br>
-            <br>
-            <br>
- <div class="block" style="background-image: url('image4.jpg');" onclick="openPopup('image4.jpg')">
-            <div class="open-icon">↗</div>
-        </div>
-        <div class="block" style="background-image: url('image5.jpg');" onclick="openPopup('image5.jpg')">
-            <div class="open-icon">↗</div>
-
-
-
-            
-        </div>
-    </div>
-
-    <div class="popup" id="popup">
-        <span class="close" onclick="closePopup()">✖</span>
-        <img id="popup-img" src="">
-    </div>
-
-    <script>
-        function openPopup(src) {
-            document.getElementById("popup-img").src = src;
-            document.getElementById("popup").style.display = "flex";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-    </script>
 </body>
 </html>
